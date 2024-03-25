@@ -1,0 +1,118 @@
+@font-face {
+    font-family: maginer;
+    src: url('maginer-font/MaginerfreeRegular-ALodL.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* || Reset */
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    background: linear-gradient(to left,#E0CB94,#6E3769);
+}
+
+/* || Title Stylings */
+
+.Title{
+    font-family: maginer;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #EEDD99;
+
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+
+/* || Calculator Styles */
+
+.Calculator{
+    width: 406px;
+    height: 630px;
+
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+
+    margin-bottom: 36px;
+}
+
+.Calculator .Screen{
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.347);
+    border-radius: 4px;
+    overflow: hidden;
+    color: aliceblue;
+
+    text-align: end;
+}
+
+.Calculator .Screen .Secondary{
+    width: 100%;
+    height: 55px;
+    line-height: 28px;
+
+    padding: 12px 8px;
+    font-size: 20px;
+
+
+    display: flex;
+    flex-flow: row-reverse wrap;
+
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.Calculator .Screen .Main{
+    width: 100%;
+    height: 65px;
+    line-height: 45px;
+
+    padding: 8px;
+    font-size: 30px;
+
+    white-space: nowrap;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    overflow-x: auto;
+    text-align: start;
+}
+
+.Buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.btn{
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.22rem;
+}
+
+.btn.Clear,
+.btn.EqualTo{
+    width: 202px;
+}
+
+.btn:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
